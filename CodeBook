@@ -1,1 +1,48 @@
+Project Requirements The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. You will be graded by your peers on a series of yes/no questions related to the project. You will be required to submit: 1) a tidy data set as described below, 2) a link to a Github repository with your script for performing the analysis, and 3) a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md. You should also include a README.md in the repo with your scripts. This repo explains how all of the scripts work and how they are connected.
 
+You should create one R script called run_analysis.R that does the following.
+
+Merges the training and the test sets to create one data set.
+
+Extracts only the measurements on the mean and standard deviation for each measurement.
+
+Uses descriptive activity names to name the activities in the data set
+
+Appropriately labels the data set with descriptive variable names.
+
+From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+Details of the Data
+
+‘README.txt’
+
+‘features_info.txt’: Shows information about the variables used on the feature vector.
+
+‘features.txt’<- features: List of all features.
+
+‘activity_labels.txt’ <- activities: Links the class labels with their activity name.
+
+‘subject_test.txt’ <- subject test: Data of volunteers for test data being observed
+
+‘subject_train.txt’ <- subject train: Data of volunteers for training data being observed
+
+‘train/X_train.txt’ <- x_train: Training set.
+
+‘train/y_train.txt’ <- y_train: Training labels.
+
+‘test/X_test.txt’ <- x_test: Test set.
+
+‘test/y_test.txt’ <- x_test: Test labels
+
+Steps followed in analysis
+Data downloaded from the URL
+
+Variables (as mentioned above) assigned.
+
+Merged the data using rbind and cbind functions into one data set called FinalData
+
+Assigned descriptive names to each column using gsub function.
+
+Created an independent new data called MainData, which contains the mean of each variable for each activity and each subject.
+
+Exported the data into 'tidydata.txt'file.
